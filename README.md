@@ -30,6 +30,7 @@ Azure: https://backend-ralph.azurewebsites.net
 - GET ~/kite (collection)
 - GET ~/kite /:id (specific kite)
 - POST ~/ (root)
+- Update ~/
 
 ## Status
 - 60% gereed van eindversie
