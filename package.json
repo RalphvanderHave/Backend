@@ -1,0 +1,27 @@
+{
+  "name": "backend-ralph",
+  "version": "1.0.0",
+  "description": "see readme",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/thuas/dt-webapplications/wa-2122-s4/intervisiegroepen/groep-5/backend-ralph.git"
+  },
+  "author": "Ralph van der Have",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/thuas/dt-webapplications/wa-2122-s4/intervisiegroepen/groep-5/backend-ralph/issues"
+  },
+  "homepage": "https://gitlab.com/thuas/dt-webapplications/wa-2122-s4/intervisiegroepen/groep-5/backend-ralph#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "sequelize": "^6.17.0"
+  }
+}

@@ -1,0 +1,209 @@
+{
+	"id": "b2565155-3275-4dfc-8c66-cf186591c366",
+	"name": "Backend",
+	"timestamp": "2022-03-27T19:46:21.282Z",
+	"collection_id": "19959358-7b618ce6-e007-4f18-823f-2a13e47ae507",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 4,
+	"totalFail": 7,
+	"results": [
+		{
+			"id": "7f52ace0-b176-4463-9469-376f70287601",
+			"name": "GET collection",
+			"url": "https://backend-danny.azurewebsites.net/movies",
+			"time": 214,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"GET https://backend-danny.azurewebsites.net// ==> Status code is 200": true,
+				"the endpoint does not return unexpected status codes": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"GET https://backend-danny.azurewebsites.net// ==> Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"the endpoint does not return unexpected status codes": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				214
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"GET https://backend-danny.azurewebsites.net// ==> Status code is 200": true,
+					"the endpoint does not return unexpected status codes": true
+				}
+			]
+		},
+		{
+			"id": "8deff0a5-3b0b-40ab-ae69-3df6f80ca53e",
+			"name": "GET specific movie",
+			"url": "https://backend-danny.azurewebsites.net/movies/1",
+			"time": 21,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"GET https://backend-danny.azurewebsites.net// ==> Status code is 200": false,
+				"the endpoint does not return unexpected status codes": false,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"GET https://backend-danny.azurewebsites.net// ==> Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"the endpoint does not return unexpected status codes": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				21
+			],
+			"allTests": [
+				{
+					"GET https://backend-danny.azurewebsites.net// ==> Status code is 200": false,
+					"the endpoint does not return unexpected status codes": false,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "96e52683-68e8-41e4-855a-fa889884e77f",
+			"name": "DELETE specific movie",
+			"url": "https://backend-danny.azurewebsites.net/movies/1",
+			"time": 23,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"DELETE https://backend-danny.azurewebsites.net// ==> Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"DELETE https://backend-danny.azurewebsites.net// ==> Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				23
+			],
+			"allTests": [
+				{
+					"DELETE https://backend-danny.azurewebsites.net// ==> Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "f45ddfa5-afcf-4790-8529-5ce000c0cfab",
+			"name": "Init",
+			"url": "https://backend-danny.azurewebsites.net/movies/admin/init",
+			"time": 729,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful POST request": false,
+				"POST https://backend-danny.azurewebsites.net// ==> Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				},
+				"POST https://backend-danny.azurewebsites.net// ==> Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				729
+			],
+			"allTests": [
+				{
+					"Successful POST request": false,
+					"POST https://backend-danny.azurewebsites.net// ==> Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "5ad1896b-a653-446e-95e4-736910e7a6a3",
+			"name": "POST new movie",
+			"url": "https://backend-danny.azurewebsites.net//movies/add",
+			"time": 22,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Successful POST request": false,
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				22
+			],
+			"allTests": [
+				{
+					"Successful POST request": false,
+					"Status code is 200": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1009,
+	"collection": {
+		"requests": [
+			{
+				"id": "7f52ace0-b176-4463-9469-376f70287601",
+				"method": "GET"
+			},
+			{
+				"id": "8deff0a5-3b0b-40ab-ae69-3df6f80ca53e",
+				"method": "GET"
+			},
+			{
+				"id": "96e52683-68e8-41e4-855a-fa889884e77f",
+				"method": "DELETE"
+			},
+			{
+				"id": "f45ddfa5-afcf-4790-8529-5ce000c0cfab",
+				"method": "POST"
+			},
+			{
+				"id": "5ad1896b-a653-446e-95e4-736910e7a6a3",
+				"method": "POST"
+			}
+		]
+	}
+}

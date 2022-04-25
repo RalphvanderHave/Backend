@@ -1,0 +1,214 @@
+{
+	"id": "4e2680c3-2f70-4fa8-a5d6-03e27c401c99",
+	"name": "backendralphsprint2",
+	"timestamp": "2022-03-27T19:49:29.045Z",
+	"collection_id": "19959358-53d53373-1415-4ac2-8879-f0efb32c3ab8",
+	"folder_id": 0,
+	"environment_id": "19959358-1c906b45-c9fa-43e0-a303-a75ef8d30e38",
+	"totalPass": 7,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "03b76658-3901-44f4-b010-219e06f2ee8d",
+			"name": "POST ~/admin/init",
+			"url": "https://backend-ralph.azurewebsites.net//admin/init",
+			"time": 708,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"POST https://backend-ralph.azurewebsites.net// ==> Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"POST https://backend-ralph.azurewebsites.net// ==> Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				708
+			],
+			"allTests": [
+				{
+					"POST https://backend-ralph.azurewebsites.net// ==> Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "5739b3bf-a20c-479a-952f-e3ee4204ed77",
+			"name": "GET ~/",
+			"url": "https://backend-ralph.azurewebsites.net/",
+			"time": 25,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"GET https://backend-ralph.azurewebsites.net// ==> Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"GET https://backend-ralph.azurewebsites.net// ==> Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				25
+			],
+			"allTests": [
+				{
+					"GET https://backend-ralph.azurewebsites.net// ==> Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "e134bd38-2ee2-4ae1-a67d-39713fc26860",
+			"name": "POST ~/kite",
+			"url": "https://backend-ralph.azurewebsites.net//kite",
+			"time": 60,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Name kite 1 is Dice": true,
+				"POST https://backend-ralph.azurewebsites.net//kite/1 ==> name: Dice": true
+			},
+			"testPassFailCounts": {
+				"Name kite 1 is Dice": {
+					"pass": 1,
+					"fail": 0
+				},
+				"POST https://backend-ralph.azurewebsites.net//kite/1 ==> name: Dice": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				60
+			],
+			"allTests": [
+				{
+					"Name kite 1 is Dice": true,
+					"POST https://backend-ralph.azurewebsites.net//kite/1 ==> name: Dice": true
+				}
+			]
+		},
+		{
+			"id": "ff734e69-dd18-439b-b0c1-dce5d003f9d3",
+			"name": "GET ~/kites ->1 kites",
+			"url": "https://backend-ralph.azurewebsites.net//kites?id=1",
+			"time": 30,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"GET https://backend-ralph.azurewebsites.net//kites ==> Received 1 kite": true
+			},
+			"testPassFailCounts": {
+				"GET https://backend-ralph.azurewebsites.net//kites ==> Received 1 kite": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				30
+			],
+			"allTests": [
+				{
+					"GET https://backend-ralph.azurewebsites.net//kites ==> Received 1 kite": true
+				}
+			]
+		},
+		{
+			"id": "1ffdd261-9072-431e-b2c6-6f84e1c6f2d3",
+			"name": "DELETE ~/kite/1",
+			"url": "https://backend-ralph.azurewebsites.net//kite/1",
+			"time": 51,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"DELETE https://backend-ralph.azurewebsites.net//kite (1) ==> Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"DELETE https://backend-ralph.azurewebsites.net//kite (1) ==> Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				51
+			],
+			"allTests": [
+				{
+					"DELETE https://backend-ralph.azurewebsites.net//kite (1) ==> Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "af47a078-f966-49bf-9d38-fe46d61aea3f",
+			"name": "GET ~/ test tekst",
+			"url": "https://backend-ralph.azurewebsites.net/",
+			"time": 23,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				23
+			],
+			"allTests": [
+				{
+					"Body matches string": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 897,
+	"collection": {
+		"requests": [
+			{
+				"id": "03b76658-3901-44f4-b010-219e06f2ee8d",
+				"method": "POST"
+			},
+			{
+				"id": "5739b3bf-a20c-479a-952f-e3ee4204ed77",
+				"method": "GET"
+			},
+			{
+				"id": "e134bd38-2ee2-4ae1-a67d-39713fc26860",
+				"method": "POST"
+			},
+			{
+				"id": "ff734e69-dd18-439b-b0c1-dce5d003f9d3",
+				"method": "GET"
+			},
+			{
+				"id": "1ffdd261-9072-431e-b2c6-6f84e1c6f2d3",
+				"method": "DELETE"
+			},
+			{
+				"id": "af47a078-f966-49bf-9d38-fe46d61aea3f",
+				"method": "GET"
+			},
+			{
+				"id": "80d82520-e50e-47ba-971a-6802afc9ac24",
+				"method": "GET"
+			}
+		]
+	}
+}
